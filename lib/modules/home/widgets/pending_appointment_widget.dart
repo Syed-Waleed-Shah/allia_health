@@ -1,6 +1,8 @@
 import 'package:allia_health/models/appointment.dart';
+import 'package:allia_health/utils/utils.dart';
 import 'package:allia_health/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class PendingAppointmentWidget extends StatelessWidget {
@@ -34,7 +36,18 @@ class PendingAppointmentWidget extends StatelessWidget {
               const SizedBox(width: 6),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [Text(appointment.doctor), Text(appointment.time)],
+                children: [
+                  Text(
+                    appointment.doctor,
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          fontWeight: FontWeight.w600,
+                        ),
+                  ),
+                  Text(
+                    appointment.time,
+                    style: Theme.of(context).textTheme.bodySmall,
+                  )
+                ],
               ),
               const SizedBox(width: 6),
               const Spacer(),
@@ -44,8 +57,8 @@ class PendingAppointmentWidget extends StatelessWidget {
                   horizontal: 8,
                 ),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor.withAlpha(50),
-                  borderRadius: BorderRadius.circular(30),
+                  color: getAppointmentTypeColor(appointment.type),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Text(
                   appointment.type,
@@ -60,7 +73,10 @@ class PendingAppointmentWidget extends StatelessWidget {
               Expanded(
                 child: CustomButton(
                   text: 'Reject',
-                  icon: Icon(Icons.close),
+                  icon: Icon(
+                    Icons.close,
+                    size: 18,
+                  ),
                   textColor: Colors.black,
                   backgroundColor: Colors.transparent,
                   borderColor:
@@ -77,6 +93,7 @@ class PendingAppointmentWidget extends StatelessWidget {
                   text: 'Accept',
                   icon: Icon(
                     Icons.done,
+                    size: 18,
                     color: Theme.of(context).primaryColor,
                   ),
                   textColor: Theme.of(context).primaryColor,
@@ -92,6 +109,6 @@ class PendingAppointmentWidget extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ).animate().slide();
   }
 }

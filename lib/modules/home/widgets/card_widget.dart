@@ -1,5 +1,6 @@
 import 'package:allia_health/models/card_item.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
@@ -46,6 +47,6 @@ class CardWidget extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ).animate().slide();
   }
 }

@@ -3,10 +3,10 @@ import 'package:allia_health/models/cards.dart';
 
 class TimeOfDayData {
   final String message;
-  final bool showPaymentCard;
+  bool showPaymentCard;
   final Cards cards;
-  final List<Appointment>? todayAppointments;
-  final List<Appointment>? pendingAppointments;
+  List<Appointment>? todayAppointments;
+  List<Appointment>? pendingAppointments;
   final int index;
   final String backgroundImage;
 

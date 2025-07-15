@@ -1,5 +1,7 @@
 import 'package:allia_health/models/appointment.dart';
+import 'package:allia_health/utils/utils.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AppointmentWidget extends StatelessWidget {
@@ -40,8 +42,8 @@ class AppointmentWidget extends StatelessWidget {
               horizontal: 8,
             ),
             decoration: BoxDecoration(
-              color: Theme.of(context).primaryColor.withAlpha(50),
-              borderRadius: BorderRadius.circular(30),
+              color: getAppointmentTypeColor(appointment.type),
+              borderRadius: BorderRadius.circular(10),
             ),
             child: Text(
               appointment.type,
@@ -50,8 +52,6 @@ class AppointmentWidget extends StatelessWidget {
           ),
         ],
       ),
-    
-    
-    );
+    ).animate().moveX();
   }
 }
