@@ -1,0 +1,139 @@
+{
+    "morning": {
+        "message": "Good Morning, Saroosh! 😇",
+        "showPaymentCard": true,
+        "backgroundImage": "morning_background.png",
+        "cards": {
+            "label": "Start your day",
+            "items": [
+                {
+                    "title": "Appreciate Yourself",
+                    "image": "morning1.png",
+                    "type": "guide",
+                    "color": "0xFFCFF0E1"
+                },
+                {
+                    "title": "Connecting Body & Mind",
+                    "image": "morning2.png",
+                    "type": "video",
+                    "color": "0xFFFBF8C9"
+                },
+                {
+                    "title": "Mindful Coffee Walk",
+                    "image": "morning3.png",
+                    "type": "audio",
+                    "color": "0xFFFBF0C9"
+                },
+                {
+                    "title": "Master your Anxiety",
+                    "image": "morning4.png",
+                    "type": "meditation",
+                    "color": "0xFFFFECF9"
+                }
+            ]
+        },
+        "todayAppointments": [
+            {
+                "doctor": "Alexander Martin",
+                "time": "8:00 AM - 8:30 PM",
+                "type": "Onsite",
+                "icon": "calendar.svg"
+            },
+            {
+                "doctor": "Sophia Carter",
+                "time": "4:00 AM - 5:00 PM",
+                "type": "Telehealth",
+                "icon": "phone.svg"
+            }
+        ],
+        "pendingAppointments": [
+            {
+                "doctor": "Dr. Isabella Thompson",
+                "time": "Wed 24, 5:30 PM - 6:00 PM",
+                "type": "Onsite",
+                "icon": "calendar.svg"
+            },
+            {
+                "doctor": "Dr. Isabella Thompson",
+                "time": "Sat 14, 8:00 AM - 8:30 PM",
+                "type": "Telehealth",
+                "icon": "phone.svg"
+            }
+        ]
+    },
+    "noon": {
+        "message": "Good Day, Saroosh! 😇",
+        "backgroundImage": "noon_background.png",
+        "cards": {
+            "label": "Midday Motivation",
+            "items": [
+                {
+                    "title": "How to Focus",
+                    "image": "noon1.png",
+                    "type": "meditation",
+                    "color": "0xFFEAE8FF"
+                },
+                {
+                    "title": "Finding Calm at Work",
+                    "image": "noon2.png",
+                    "type": "video",
+                    "color": "0xFFD3FFFE"
+                },
+                {
+                    "title": "Coffee Break",
+                    "image": "noon3.png",
+                    "type": "audio",
+                    "color": "0xFFFBF0C9"
+                },
+                {
+                    "title": "Breathe Away Distractions",
+                    "image": "noon4.png",
+                    "type": "meditation",
+                    "color": "0xFFDDF3D8"
+                }
+            ]
+        },
+        "todayAppointments": [
+           
+            {
+                "doctor": "Sophia Carter",
+                "time": "4:00 AM - 5:00 PM",
+                "type": "Telehealth",
+                "icon": "phone.svg"
+            }
+        ]
+    },
+    "night": {
+        "message": "Almost time for bed 😇",
+        "backgroundImage": "night_background.png",
+        "cards": {
+            "label": "Unwind and reflect",
+            "items": [
+                {
+                    "title": "Relaxing the Muscles",
+                    "image": "night1.png",
+                    "type": "meditation",
+                    "color": "0xFFFAE2ED"
+                },
+                {
+                    "title": "Time for Me",
+                    "image": "night2.png",
+                    "type": "video",
+                    "color": "0xFFF0EAF7"
+                },
+                {
+                    "title": "Organizing Your Thoughts",
+                    "image": "night3.png",
+                    "type": "audio",
+                    "color": "0xFFDBF4F3"
+                },
+                {
+                    "title": "Letting Go of Stress",
+                    "image": "night4.png",
+                    "type": "meditation",
+                    "color": "0xFFF8EAF3"
+                }
+            ]
+        }
+    }
+}
